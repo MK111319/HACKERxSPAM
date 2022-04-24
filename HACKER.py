@@ -1069,7 +1069,7 @@ async def ping(e):
 @M25.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 async def restart(e):
     if e.sender_id in MK_USERS:
-        text = "2 𝐌𝐈𝐍 𝐑𝐔𝐊 𝐑𝐄𝐃𝐁𝐔𝐋𝐋 𝐏𝐄 𝐑𝐇𝐀 🦏"
+        text = "3 𝐌𝐈𝐍 𝐑𝐔𝐊 𝐑𝐄𝐃𝐁𝐔𝐋𝐋 𝐏𝐄 𝐑𝐇𝐀 🥵"
         await e.reply(text, parse_mode=None, link_preview=None )
         try:
             await M1.disconnect()
